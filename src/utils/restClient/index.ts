@@ -102,7 +102,7 @@ class RestClient {
 				const data = await response.json();
 				const api_response = {
 					status: response.status,
-					headers: response.headers.raw(),
+					headers: response.headers,
 				};
 				data.api_response = api_response;
 
